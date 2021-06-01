@@ -11,10 +11,13 @@ This project is renamed as **EtherAPI** from EtherEngine, which aims to provide 
 
 ## 本地编译 · Building
 
-由于 EtherAPI 基于 SDL 和 Lua 等库实现，所以您可能需要先本地编译相关的库进行支持。  
+如果使用Visual Studio编译，你将需要安装[vcpkg](https://github.com/microsoft/vcpkg)并全局集成。具体操作参考[快速开始: Windows](https://github.com/microsoft/vcpkg/blob/master/README_zh_CN.md#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-windows)。  
+If you decided to build through Visual Studio, you are required to install [vcpkg](https://github.com/microsoft/vcpkg) and install a user-wide intergration. Please reference to [Quick Start: Windows](https://github.com/microsoft/vcpkg#quick-start-windows)
+
+由于 EtherAPI 基于 SDL 和 Lua 等库实现，所以您需要在非MSBuild生成平台上先本地编译相关的库进行支持。  
 您可以在以下网址处找到这些依赖适合您所使用的平台的发布版本或源码： 
 
-Since EtherAPI is implemented based on SDL, Lua and other libraries, you may need to compile the relevant libraries for support first.
+Since EtherAPI is implemented based on SDL, Lua and other libraries, you are required to build dependencies first if you are'nt using MSBuild
 You can find the release version or source code of these dependencies for the platform you are using at the following address:   
 
 + **Lua - 5.4.0：**[http://www.lua.org/](http://www.lua.org/)
